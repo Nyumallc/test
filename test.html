@@ -61,8 +61,7 @@
         $(function () {
             $('form').submit(function () {
                 const murl = $('input[name="url"]').val();
-                const opt = $('input[name="option"]').val();
-                return false;                
+                const opt = $('input[name="option"]').val();            
                 const msg = `${murl}\n${opt}`;
                 sendText(msg);
                  return false;
