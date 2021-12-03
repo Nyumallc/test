@@ -60,9 +60,11 @@
 
         $(function () {
             $('form').submit(function () {
-                const name    = $('input[name="url"]').val();
-                const udetate = $('input[name="option"]').val();
-                return false;
+                const murl    = $('input[name="url"]').val();
+                const opt = $('input[name="option"]').val();
+                return false;                
+                const msg = `${murl}\n${opt}`;
+                sendText(msg);
             });
         });
 
