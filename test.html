@@ -54,7 +54,16 @@
                 console.log('LIFF Initialization failed ', err);
             });
         }
-
+        
+     function getProfile(){
+        liff.getProfile()
+.then(profile => {
+  const name = profile.displayName
+})
+.catch((err) => {
+  console.log('error', err);
+});
+     }
         function sendText(text) {
             liff.sendMessages([{
                 'type': 'text',
@@ -71,7 +80,7 @@
 
         $(function () {
             $('form').submit(function () {
-                const name    = $('input[name="name"]').val();
+                const name    = name
                 const udetate = $('input[name="udetate"]').val();
                 const fukkin  = $('input[name="fukkin"]').val();
                 const haikin  = $('input[name="haikin"]').val();
