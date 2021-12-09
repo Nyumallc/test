@@ -1,13 +1,13 @@
 const btn = document.getElementById('submit-btn');
 btn.setAttribute('onclick', 'pushButton1()');
 function pushButton1() {
+        const url = document.getElementById('url').Value;
+        const option= document.getElementById('option').Value;
+        const resurl=(`${REQUEST_URL}?userid=${userid}&displayname=${displayname}&url=${url}&option=${option}`)
         const res = fetch(resurl);
         console.log(res);
     };
   
-const resurl=(`${REQUEST_URL}?userid=${userid}&displayname=${displayname}&url=${url}&option=${option}`)
-const url = document.getElementById('url').Value;
-const option= document.getElementById('option').Value;
 
 // ページをreload
 function doReload() {
