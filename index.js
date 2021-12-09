@@ -1,7 +1,8 @@
 let userId = ''
 
 document.getElementById('submit-btn').addEventListener('click' = function() {
-  document.getElementById('res').innerHTML =resurl;
+  location.replace("https://www.google.com/");
+
   const response = await axios.get(resurl)
  location.reload()
  fetch(resurl)
