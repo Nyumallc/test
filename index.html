@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+    <title>NYUMA購入リクエスト</title>
+    <script>
+      // 定数を定義する
+      const LIFF_ID = '1656679590-rpyP7yG8'
+      const REQUEST_URL = 'https://script.google.com/macros/s/AKfycbydDEfZMgW62Zb6FyK8rVZhr8Yo7AR_8vUcziZcV8h010ATMJpC3uMVDgPPg0OqQIYR/exec'
+    </script>
+  </head>
+  <body>
+    <header class="sticky-top flexbox-end" style="height: 70px;">
+        <span class="user-name" style="margin:auto 10px;" id="user-name">
+        </span>
+        <div class="icon">
+            <img src="" class="rounded-circle" height="50px" id="icon">
+        </div>
+    </header>
+    <main class="flexbox">
+        <h2 id="question">
+          <dt>URLを入力してください。</dt>
+          <br>
+          <input type="text" id="url" name="rul" required
+     minlength="8" maxlength="40" size="40">
+     <br />
+     <br>
+     <textarea id="option" row="20" cols="40">備考を入力してください。（例：要泡泡梱包）</textarea>
+     <br />
+     <button class="btn btn-primary" id="submit-btn">送信</button>
+
+  
+
+  <!-- for bootstrap -->
+  <!-- for liff -->
+  <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+ <!-- 　 for local liff -->
+  <script src="liff.js"></script>
+  <script src="index.js"></script>
+  </body>
+</html>
