@@ -1,5 +1,5 @@
 window.onload = function() {
-  const liffClient =  setLiffClient()
+  const liffClient = setLiffClient()
 
   // setup をする
   liffClient(() => { if(!liff.isLoggedIn())liff.login(); })
@@ -8,7 +8,7 @@ window.onload = function() {
 
 const setLiffClient = () => {
   return (func) => { liff.init({ liffId: LIFF_ID }).then(func) }
-}
+};
 
 const getProfile = async (liffClient) => {
   liffClient(() => {
@@ -16,13 +16,7 @@ const getProfile = async (liffClient) => {
       // 02. プロフィールにユーザー名を表示してみよう
        document.getElementById('user-name').innerText = profile.displayName
       document.getElementById('icon').src = profile.pictureUrl
-     const userid = profile.userId
+      const userid = profile.userId
     })
   })
-}
-
-const sendMessage = async (messages) => {
-  await liff.sendMessages(messages).catch((err) => {
-    document.getElementById('hote').innerHTML = err
-  });
-}
+};
