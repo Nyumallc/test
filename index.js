@@ -9,9 +9,6 @@ const resurl=(`${REQUEST_URL}?userid=${userid}&displayname=${displayname}&url=${
 const url = document.getElementById('url').Value;
 const option= document.getElementById('option').Value;
 
-
-btn.addEventListener('click', urlSubmit);
-
 // ページをreload
 function doReload() {
     window.location.reload(true);
