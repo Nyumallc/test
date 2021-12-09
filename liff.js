@@ -1,4 +1,4 @@
-window.onload function() {
+window.onload = function() {
   const liffClient = await setLiffClient()
 
   // setup をする
