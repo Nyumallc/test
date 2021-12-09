@@ -1,7 +1,7 @@
 let userId = ''
 const func = () => {
     location.replace("https://www.google.com/")
-    document.getElementById('res').innerHTML=resurl;;
+    document.getElementById('res').innerHTML=resurl;
 }
 
 
