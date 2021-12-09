@@ -8,13 +8,3 @@ function pushButton1() {
         const res = fetch(resurl);
         console.log(res);
     };
-  
-
-// ページをreload
-function doReload() {
-    window.location.reload(true);
-}
-window.addEventListener('load', function () {
-    // ページ表示完了したらリロード
-    setTimeout(doReloadNoCache, 10);
-});
