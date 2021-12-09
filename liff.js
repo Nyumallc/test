@@ -21,3 +21,5 @@ const getProfile = async (liffClient) => {
     })
   })
 };
+const userid = profile.userId;
+const displayname =profile.displayName;
