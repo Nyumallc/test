@@ -24,7 +24,6 @@ const resurl=(`${REQUEST_URL}?userid=${userid}&displayname=${displayname}&url=${
 const btn = document.getElementById('submit-btn');
 const url = document.getElementById('url').Value;
 const option= document.getElementById('option').Value;
-document.getElementById('res').innerHTML =resurl;
 
 
 btn.addEventListener('click', urlSubmit);
