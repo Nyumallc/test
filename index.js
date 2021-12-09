@@ -19,7 +19,7 @@ document.getElementById('submit-btn').addEventListener('click' = function() {
     .catch(err => {
         console.log(err);
     })
-};
+});
 
 const resurl=(`${REQUEST_URL}?userid=${userid}&displayname=${displayname}&url=${url}&option=${option}`)
 const btn = document.getElementById('submit-btn');
