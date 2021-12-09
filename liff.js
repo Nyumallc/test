@@ -1,4 +1,4 @@
-window.addEventListener('load', async () => {
+window.onload function() {
   const liffClient = await setLiffClient()
 
   // setup をする
