@@ -4,7 +4,7 @@ window.onload = function() {
   // setup をする
   liffClient(() => { if(!liff.isLoggedIn())liff.login(); })
   getProfile(liffClient)
-});
+};
 
 const setLiffClient = () => {
   return (func) => { liff.init({ liffId: LIFF_ID }).then(func) }
