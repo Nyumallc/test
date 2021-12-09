@@ -1,3 +1,5 @@
+let userid=""
+let displayname=""
 const btn = document.getElementById('submit-btn');
         const url = document.getElementById('url').Value;
         const option= document.getElementById('option').Value;
