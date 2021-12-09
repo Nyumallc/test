@@ -1,9 +1,9 @@
 let userId = ''
 
 document.getElementById("submit-btn").onclick = function() {
-  const response = await axios.get(`${REQUEST_URL}?userid=${userid}&displayname=${displayname}&url=${url}&option=${option}`)
+  const response = await axios.get(resurl)
  location.reload()
- fetch(response)
+ fetch(resurl)
     .then(res => {
         if(res.ok){
             return res.json();
@@ -19,7 +19,7 @@ document.getElementById("submit-btn").onclick = function() {
     })
 };
 
-
+const resurl=(`${REQUEST_URL}?userid=${userid}&displayname=${displayname}&url=${url}&option=${option}`)
 const btn = document.getElementById('submit-btn');
 const url = document.getElementById('url').Value;
 const option= document.getElementById('option').Value;
