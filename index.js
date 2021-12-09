@@ -6,8 +6,8 @@ function urlSubmit(event) {
  location.reload()
 }
 
-const url = document.getElementById('submit-btn');
+const btn = document.getElementById('submit-btn');
 const url = document.getElementById('url').Value;
-const btn = document.getElementById('option').Value;
+const option= document.getElementById('option').Value;
 
 btn.addEventListener('click', urlSubmit);
