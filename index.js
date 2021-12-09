@@ -1,7 +1,7 @@
 const btn = document.getElementById('submit-btn');
 btn.setAttribute('onclick', 'pushButton1()');
 function pushButton1() {
- alert(resurl);;
+ alert(resurl);
   }
 
 
