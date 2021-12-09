@@ -1,7 +1,7 @@
 const btn = document.getElementById('submit-btn');
 btn.setAttribute('onclick', 'pushButton1()');
 function pushButton1() {
-    alert('クリックされました -1-');
+   document.getElementById('res').innerHTML=resurl;
   }
 
 
@@ -12,9 +12,6 @@ function pushButton1() {
 const resurl=(`${REQUEST_URL}?userid=${userid}&displayname=${displayname}&url=${url}&option=${option}`)
 const url = document.getElementById('url').Value;
 const option= document.getElementById('option').Value;
-
-
-btn.addEventListener('click', urlSubmit);
 
 // ページをreload
 function doReload() {
