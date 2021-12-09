@@ -2,8 +2,22 @@ let userId = ''
 
 function urlSubmit(event) {
  // APIリクエストを行う
- const response = await axios.get(`${REQUEST_URL}?userid=${userid()}&displayname=${displayname}&url=${url}&option=${option}`)
+ const response = await axios.get(`${REQUEST_URL}?userid=${userid}&displayname=${displayname}&url=${url}&option=${option}`)
  location.reload()
+ fetch(response)
+    .then(res => {
+        if(res.ok){
+            return res.json();
+        } else {
+            throw new Error();
+        }
+    })
+    .then(myJson => {
+        console.log(JSON.stringify(myJson));
+    })
+    .catch(err => {
+        console.log(err);
+    })
 }
 
 const btn = document.getElementById('submit-btn');
