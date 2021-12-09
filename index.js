@@ -1,4 +1,3 @@
-let mode = 'vote'
 let userId = ''
 
 function urlSubmit(event) {
