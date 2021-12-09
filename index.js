@@ -1,8 +1,7 @@
 let userId = ''
 
-function urlSubmit(event) {
- // APIリクエストを行う
- const response = await axios.get(`${REQUEST_URL}?userid=${userid}&displayname=${displayname}&url=${url}&option=${option}`)
+document.getElementById("submit-btn").onclick = function() {
+  const response = await axios.get(`${REQUEST_URL}?userid=${userid}&displayname=${displayname}&url=${url}&option=${option}`)
  location.reload()
  fetch(response)
     .then(res => {
@@ -18,7 +17,8 @@ function urlSubmit(event) {
     .catch(err => {
         console.log(err);
     })
-}
+};
+
 
 const btn = document.getElementById('submit-btn');
 const url = document.getElementById('url').Value;
