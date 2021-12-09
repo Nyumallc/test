@@ -1,6 +1,6 @@
 
 document.getElementById("submit-btn").onclick = function() {
-  document.getElementById("res").innerHTML =resurl";
+  document.getElementById("res").innerHTML =resurl;
 }
 
 
