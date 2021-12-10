@@ -5,7 +5,7 @@ function pushButton1() {
     let urltext = url.value;
     let option= document.getElementById("option");
     let optiontext= option.Value;
-    let resurl=(`${REQUEST_URL}?&userid=aaa&displayname=bbbbb&url=${url}&option=${option}`)
+    let resurl=(`${REQUEST_URL}?&userid=aaa&displayname=bbbbb&url=${urltext}&option=${optiontext}`)
 
          alert(resurl);
         const res = fetch(resurl);
