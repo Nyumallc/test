@@ -17,7 +17,6 @@ const getProfile = async (liffClient) => {
       document.getElementById('user-name').innerText = profile.displayName
       document.getElementById('icon').src = profile.pictureUrl
       document.getElementById('user_id').innerText = profile.userId
-       location.reload();
       let userid = profile.userId
       let displayname =profile.displayName
     })
