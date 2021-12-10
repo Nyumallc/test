@@ -17,25 +17,25 @@
   </head>
   <body>
     <main>
+      <span class="user_id" style="margin:auto 10px;" id="user_id">
+      </span>
        <span class="user-name" style="margin:auto 10px;" id="user-name">
         </span>
         <div class="icon">
             <img src="" class="rounded-circle" height="50px" id="icon">
         </div>
-<div>
-<label>URLを入力してください。<br>
- <input type="text" id="url" name="url" required
-  minlength="8" maxlength="40" size="40">
-</label>
-</div>
-   
- <div>
-<label>備考を入力してください。（例：要泡泡梱包）<br>
- <input type="text" id="option" name="option" 
-  minlength="8" maxlength="40" size="40">
-</label>
-</div>
-     <button class="btn btn-primary" id="submit-btn">送信</button>
+          <dt>URLを入力してください。</dt>
+          <br>
+          <input type="text" id="url" name="rul" required
+     minlength="8" maxlength="40" size="40">
+     <br />
+     <br>
+     <textarea id="option" value="備考を入力してください。（例：要泡泡梱包）" row="20" cols="40"></textarea>
+     <br />
+     <br>
+     <textarea id="res" row="20" cols="40">aaa</textarea>
+     <br />
+     <input type="button" value="送信">
 
   
 
