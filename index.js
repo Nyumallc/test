@@ -15,4 +15,12 @@ function pushButton1() {
          alert(resurl);
         const res = fetch(resurl);
         console.log(res);
+        liff.sendMessages([{
+            'type': 'text',
+            'text': urltext + "の注文を受け付けました。購入まで少々お待ちください。"
+          }]).then(function() {
+            // document.getElementById('log').value += 'sendMessagesText completed\n';
+          }).catch(function(error) {
+            // document.getElementById('log').value += 'sendMessagesText()=' + error + '\n';
+          });
     };
