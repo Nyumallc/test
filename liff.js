@@ -10,9 +10,9 @@ const setLiffClient = () => {
   return (func) => { liff.init({ liffId: LIFF_ID }).then(func) }
 };
 
-const getProfile = async (liffClient) => {
+const getProfile =  (liffClient) => {
   liffClient(() => {
-    await  liff.getProfile().then((profile) => {
+     liff.getProfile().then((profile) => {
       // 02. プロフィールにユーザー名を表示してみよう
       document.getElementById('user-name').innerText = profile.displayName
       document.getElementById('icon').src = profile.pictureUrl
