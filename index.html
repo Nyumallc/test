@@ -24,12 +24,14 @@
         </div>
           <dt>URLを入力してください。</dt>
           <br>
-          <input type="text" id="url" name="rul" required
+          <input type="text" id="url" name="url" required
      minlength="8" maxlength="40" size="40">
      <br />
-     <br>
-     <textarea id="option" value="備考を入力してください。（例：要泡泡梱包）" row="20" cols="40"></textarea>
-     <br />
+ <div>
+<label>備考を入力してください。（例：要泡泡梱包）<br>
+<textarea cols="40" rows="20" id="option"></textarea>
+</label>
+</div>
      <button class="btn btn-primary" id="submit-btn">送信</button>
 
   
