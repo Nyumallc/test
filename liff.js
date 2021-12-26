@@ -10,7 +10,7 @@ const setLiffClient = () => {
   return (func) => { liff.init({ liffId: LIFF_ID }).then(func) }
 };
 
-const getProfile = async (liffClient) => {
+const getProfile = await (liffClient) => {
   liffClient(() => {
      liff.getProfile().then((profile) => {
       // 02. プロフィールにユーザー名を表示してみよう
