@@ -11,20 +11,17 @@ function pushButton1() {
     let optiontext= option.value;
     
     let resurl=(`${REQUEST_URL}?&userid=${userid}&displayname=${displayname}&url=${urltext}&option=${optiontext}`)
-
+    
          alert(resurl);
         const res = fetch(resurl);
         console.log(res);
+        liff.sendMessages([{
+            'type': 'text',
+            'text': urltext + "の注文をリクエストしました。"
+          }]).then(function() {
+            // document.getElementById('log').value += 'sendMessagesText completed\n';
+          }).catch(function(error) {
+            // document.getElementById('log').value += 'sendMessagesText()=' + error + '\n';
+          });
     };
 
-buy_btn = document.getElementById("request_buy");
-buy_btn.setAttribute('onclick', 'pushButton2()');
-
-function pushButton2() {
-    var referrer = document.referrer;
-    if (referrer == "") {
-        console.log('空みたい')
-    }
-    console.log(referrer);
-    document.getElementById("url").Value= url
-};
