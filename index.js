@@ -25,6 +25,7 @@ function pushButton1() {
           });
     };
 
+
 btn2 = document.getElementById("rireki-btn");
 btn2.setAttribute('onclick', 'pushButton2()');
 function pushButton2() {
