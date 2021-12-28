@@ -32,5 +32,6 @@ function pushButton2() {
     let user_id = document.getElementById("user_id");
     let userid = user_id.innerHTML;
     let resurl=(`https://share.streamlit.io/nyumallc/streamlit_db/main/streamlit_db.py?userid=${userid}`)
+     alert(resurl);
     };
 
