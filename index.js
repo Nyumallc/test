@@ -11,7 +11,7 @@ function pushButton1() {
     let optiontext= option.value;
     
     let resurl=(`${REQUEST_URL}?&userid=${userid}&displayname=${displayname}&url=${urltext}&option=${optiontext}`)
-    
+
          alert(resurl);
         const res = fetch(resurl);
         console.log(res);
