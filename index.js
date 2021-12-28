@@ -25,8 +25,8 @@ function pushButton1() {
           });
     };
 
-btn = document.getElementById("rireki-btn");
-btn.setAttribute('onclick', 'pushButton2()');
+btn2 = document.getElementById("rireki-btn");
+btn2.setAttribute('onclick', 'pushButton2()');
 function pushButton2() {
     let user_id = document.getElementById("user_id");
     let userid = user_id.innerHTML;
