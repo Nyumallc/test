@@ -1,5 +1,7 @@
 btn = document.getElementById("submit-btn");
 btn.setAttribute('onclick', 'pushButton1()');
+btn2 = document.getElementById("rireki-btn");
+btn2.setAttribute('onclick', 'pushButton2()');
 function pushButton1() {
     let name = document.getElementById("user-name");
     let displayname = name.innerHTML;
@@ -24,3 +26,11 @@ function pushButton1() {
             // document.getElementById('log').value += 'sendMessagesText()=' + error + '\n';
           });
     };
+
+
+function pushButton2() {
+    let user_id = document.getElementById("user_id");
+    let userid = user_id.innerHTML;
+    let resurl=(`https://share.streamlit.io/nyumallc/streamlit_db/main/streamlit_db.py?userid=${userid}`)
+    };
+
