@@ -31,7 +31,7 @@ function pushButton1() {
 function pushButton2() {
     let user_id = document.getElementById("user_id");
     let userid = user_id.innerHTML;
-    location.href=(`https://share.streamlit.io/nyumallc/streamlit_db/main/streamlit_db.py?userid=${userid}`)
+    location.href=(`https://share.streamlit.io/nyumallc/streamlit_db/main/streamlit_db.py?f_num=mercari&userid=${userid}`)
      
     };
 
