@@ -1,5 +1,5 @@
 window.onload = function() {
-    const liffClient = await setLiffClient()
+    const liffClient = setLiffClient()
   
     liffClient(() => { if(!liff.isLoggedIn())liff.login(); })
     getProfile(liffClient)
