@@ -16,8 +16,4 @@ window.addEventListener('load', async () => {
   .then(() => {
     const idToken = liff.getIDToken();
     console.log(idToken);
-    document.getElementById('user-name').innerText = idToken.name
-    document.getElementById('icon').src = idToken.picture
-    document.getElementById('user_id').innerText = idToken.sub
   });
-
