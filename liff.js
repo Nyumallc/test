@@ -1,14 +1,4 @@
 window.addEventListener('load', async () => {
-    const liffClient =setLiffClient()
-  
-    liffClient(() => { if(!liff.isLoggedIn())liff.login(); })
-    getProfile(liffClient)
-  });
-  
-  const setLiffClient = () => {
-    return (func) => { liff.init({ liffId: LIFF_ID }).then(func) }
-  };
-
   liff
   .init({
     liffId: LIFF_ID, // Use own liffId
