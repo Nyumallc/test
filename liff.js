@@ -9,15 +9,6 @@ window.onload = function() {
     return (func) => { liff.init({ liffId: LIFF_ID }).then(func) }
   };
 
-  liff
-  .init({
-    liffId: LIFF_ID, // Use own liffId
-  })
-  .then(() => {
-    const idToken = liff.getDecodedIDToken();
-    console.log(idToken);
-  });
-
 
   const getProfile = async (liffClient) => {
     liffClient(() => {
