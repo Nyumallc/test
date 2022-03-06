@@ -9,6 +9,16 @@ window.addEventListener('load', async () => {
     return (func) => { liff.init({ liffId: LIFF_ID }).then(func) }
   }
   
+  liff
+  .init({
+    liffId: LIFF_ID, // Use own liffId
+  })
+  .then(() => {
+    const idToken = liff.getIDToken();
+    console.log(idToken); // print raw idToken object
+  });
+
+
   const getProfile = async (liffClient) => {
     liffClient(() => {
       liff.getProfile().then((profile) => {
