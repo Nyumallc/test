@@ -13,7 +13,19 @@ function pushButton1() {
     let optiontext= option.value;
     
     let resurl=(`${REQUEST_URL}?&userid=${userid}&displayname=${displayname}&url=${urltext}&option=${optiontext}`)
-
+    let 
+         
+    if (Len(userid ) > 10) {
+        res_text=(`${displayname}${urltext}已收到您的訂單`);
+        }else{
+            console.log(`可以利用左下角選單功能中的右上角
+填單時請注意URL網址上方必須要出現：自己的頭像以及Line的ID
+才算有成功登入填單系統
+也請注意必須要在備註當中填寫：品名＋價格也請勿填錯～
+謝謝您！`);
+        }
+     alert(res_text);
+    
          alert(resurl);
         const res = fetch(resurl);
         console.log(res);
