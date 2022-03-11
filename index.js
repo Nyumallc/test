@@ -17,7 +17,7 @@ function pushButton1() {
     if (userid.length >= 10) {
         res_text=(`${displayname}${urltext}已收到您的訂單`);
         }else{
-            res_text=(`可以利用左下角選單功能中的右上角、填單時請注意URL網址上方必須要出現自己的頭像以及Line的ID、才算有成功登入填單系統也請注意必須要在備註當中填寫,品名,價格也請勿填錯～謝謝您`);
+            res_text=("可以利用左下角選單功能中的右上角、填單時請注意URL網址上方必須要出現自己的頭像以及Line的ID、才算有成功登入填單系統也請注意必須要在備註當中填寫,品名,價格也請勿填錯～謝謝您");
         }
      alert(res_text);
     
