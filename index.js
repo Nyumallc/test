@@ -13,7 +13,7 @@ function pushButton1() {
     // let key = document.getElementById("keyword");
     // let key = key.value;
 
-    let resurl=(`https://script.google.com/macros/s/AKfycbzPDS6SjcPf_Ud5a8FVeun7V2drrkrbV41YX-02KLr7vQKgV9eqZftrSHk1_Uh9sTQ/exec?&userid=${userid}&displayname=${displayname}&p_title=${p_title}`)
+    let resurl=(`https://script.google.com/macros/s/AKfycbzPDS6SjcPf_Ud5a8FVeun7V2drrkrbV41YX-02KLr7vQKgV9eqZftrSHk1_Uh9sTQ/exec?userid=${userid}&displayname=${displayname}&p_title=${p_title}`)
     location.href=resurl
     
  
