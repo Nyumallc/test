@@ -2,7 +2,7 @@ var params = (new URL(document.location)).searchParams;
 var p_titie = params.get('p_titie');
 
 
-btn1 = document.getElementById();
+btn1 = document.getElementById("submit-btn");
 btn1.setAttribute('onclick', 'pushButton1(this.id)');
 
 function pushButton1() {
