@@ -19,7 +19,6 @@ window.onload = function() {
         document.getElementById('user_id').innerText = profile.userId
         let userid = profile.userId
         let displayname =profile.displayName
-        alert(userid);
       })
     })
   };
