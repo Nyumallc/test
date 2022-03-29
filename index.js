@@ -13,16 +13,7 @@ function pushButton1(clicked_id) {
     // let key = document.getElementById("keyword");
     // let key = key.value;
 
-    let resurl=(`https://share.streamlit.io/nyumallc/rensen/main/netpicup_streamlit.py?&userid=${userid}&displayname=${displayname}&p_title=${p_title}`)
+    let resurl=(`https://script.google.com/macros/s/AKfycbzPDS6SjcPf_Ud5a8FVeun7V2drrkrbV41YX-02KLr7vQKgV9eqZftrSHk1_Uh9sTQ/exec?&userid=${userid}&displayname=${displayname}&p_title=${p_title}`)
     location.href=resurl
     
-    // liff.sendMessages([{
-    //     'type': 'text',
-    //     'text': p_title + "の注文をリクエストしました。"
-    //   }]).then(function() {
-    //     // document.getElementById('log').value += 'sendMessagesText completed\n';
-    //   }).catch(function(error) {
-    //     // document.getElementById('log').value += 'sendMessagesText()=' + error + '\n';
-    //   });
-      
-    };
+ 
