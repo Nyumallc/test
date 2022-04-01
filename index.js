@@ -11,6 +11,7 @@ function pushButton1() {
     let displayname = name.innerHTML;
     let user_id = document.getElementById("user_id");
     let userid = user_id.innerHTML;
+    let p_title=params.get('p_title');
     // let key = document.getElementById("keyword");
     // let key = key.value;
 
