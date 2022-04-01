@@ -1,6 +1,7 @@
 const url = new URL(window.location.href);
 let params = url.searchParams;
-p_title=params.get('p_title');
+let p_title=params.get('p_title');
+
 
 btn1 = document.getElementById("submit-btn");
 btn1.setAttribute('onclick', 'pushButton1()');
